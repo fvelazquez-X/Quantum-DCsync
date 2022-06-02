@@ -19,6 +19,18 @@ The general experiment approach is described in these steps, as we can check fro
 
 
 
+## Golden Ticket Function
+
+  
+The golden ticket function contains the communication interchange between the registries, and the abstraction of the Active Directory domain with the presence of an attacker. It takes three main parameters:
+
+service_TGS (String): The Service to be requested after obtaining a TGT (A or B).
+
+TGT (boolean): If the value is set to True, the server grants a TGT to initiate a service connection.
+
+attacker (boolean): If the attacker value is True, it will execute a Quantum DCSync attack towards the ServerDC registry.   
+
+
 ## Authors
 
 - [@fvelazquez](https://www.github.com/fvelazquez-X)
